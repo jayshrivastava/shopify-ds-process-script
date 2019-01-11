@@ -40,6 +40,7 @@ current_set = []
 for value in values[1:]:
 
   if value[0] != current_product_id: 
+    
     average_annual_increases_for_all_items.append(calculate_average_annual_increase_per_item(current_set))
     current_set.clear()
     current_product_id = value[0]
